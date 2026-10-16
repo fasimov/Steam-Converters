@@ -1,0 +1,19 @@
+.cur-rub-converted {
+  display: inline;
+  color: #beee11;
+  font-size: 0.9em;
+  font-weight: 600;
+  background: rgba(190, 238, 17, 0.08);
+  padding: 0 4px;
+  border-radius: 3px;
+  margin-left: 4px;
+  white-space: nowrap;
+  line-height: 1.4;
+  vertical-align: baseline;
+}
+
+.cur-rub-converted::before {
+  content: "\2192\00A0";
+  color: #66c0f4;
+  font-weight: 400;
+}

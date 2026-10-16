@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  background: #1b2838;
+  color: #c7d5e0;
+  font-family: "Motiva Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  padding: 18px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #66c0f4;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #8f98a0;
+  margin-top: 2px;
+}
+
+.updated {
+  font-size: 11px;
+  color: #8f98a0;
+  margin-bottom: 12px;
+}
+
+.rate-list {
+  max-height: 280px;
+  overflow-y: auto;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rate-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.rate-list::-webkit-scrollbar-thumb {
+  background: rgba(102, 192, 244, 0.3);
+  border-radius: 2px;
+}
+
+.rate-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(102, 192, 244, 0.08);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.rate-item:hover {
+  border-color: rgba(102, 192, 244, 0.25);
+}
+
+.rate-item-code {
+  font-size: 13px;
+  font-weight: 600;
+  color: #c7d5e0;
+  min-width: 45px;
+}
+
+.rate-item-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #beee11;
+}
+
+.rate-item-eq {
+  font-size: 10px;
+  color: #556772;
+  margin-left: 2px;
+}
+
+.loading {
+  text-align: center;
+  color: #556772;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.btn-refresh {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #47bfff 0%, #1a44c2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-refresh:hover {
+  opacity: 0.9;
+}
+
+.btn-refresh:active {
+  transform: scale(0.98);
+}
+
+.btn-refresh:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.footer {
+  font-size: 10px;
+  color: #556772;
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.5;
+}

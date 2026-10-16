@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Currency \u2192 RUB Конвертер",
+  "version": "0.9.1",
+  "description": "Автоматически конвертирует любые цены на Steam (тенге, доллары, евро и др.) в рубли",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://store.steampowered.com/*",
+    "https://steamcommunity.com/*",
+    "https://open.er-api.com/*",
+    "https://tlikeuiwwupjawyzhxaj.supabase.co/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://store.steampowered.com/*",
+        "https://steamcommunity.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Currency \u2192 RUB"
+  }
+}
